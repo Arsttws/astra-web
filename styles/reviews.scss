@@ -1,0 +1,40 @@
+$dark: #2F2B2B;
+$lightGray: #d9d9d9;
+$lightBlue: #40C3A4;
+$lightBlueHover: #40c3a454;
+
+.reviews-wrapper{
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 60px;
+    .mySwiper{
+        margin: 0 auto;
+        max-width: 800px;
+        width: 100%;
+        // max-width: 800px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .review{
+            position: relative;
+            max-width: 800px;
+            width: 100%;
+            padding: 40px 0;
+            overflow: hidden;
+            background-color: $lightBlueHover;
+            border-radius: 20px;
+            cursor: grab;
+            .review-wrap{
+                .review-main{
+                    padding: 0 80px;
+                    color: $dark;
+                    .text{
+                        font-size: 16px;
+                        padding: 20px 0;
+                    }
+                }
+            }
+        }
+    }
+}

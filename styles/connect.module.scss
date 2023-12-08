@@ -1,0 +1,60 @@
+$lightBlueHover: #40c3a454;
+$ExtralightBlueHover: #40c3a423;
+$lightBlue: #40C3A4;
+$dark: #2F2B2B;
+
+.connectWrapper{
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+}
+.form{
+    width: 100%;
+    margin-top: 60px;
+}
+.form input, .form textarea, .form select{
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    min-width: 100%;
+    height: 60px;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    background: $lightBlueHover;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-size: 16px;
+}
+.form select:focus{
+    option{
+        color: $dark;
+        font-size: 18px;
+    }
+}
+.form textarea{
+    max-height: 400px;
+    min-height: 100px;
+    min-width: none;
+}
+.input:focus{
+    background-color: $ExtralightBlueHover;
+    border: 1px solid $lightBlue !important;
+}
+// .input:focus ~ .label::after{
+//     content: '';
+//     display: flex;
+//     width: 100%;
+//     height: 2px;
+//     background: $lightBlue;
+// }
+.form button{
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.form button:disabled{
+    cursor: no-drop;
+}
+

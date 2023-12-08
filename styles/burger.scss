@@ -1,0 +1,189 @@
+$dark: #2F2B2B;
+$lightGray: #d9d9d9;
+$lightBlue: #40C3A4;
+
+.burger-menu{
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  cursor :pointer;
+  z-index: 19;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  width: 32px;
+  height: 20px;
+  
+  span{
+      content: '';
+      display: block;
+      width: 32px;
+      height: 3px;
+      background-color: $lightBlue;
+      border-radius: 3px;
+      display: block;
+      -webkit-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+      -webkit-transition: .5s ease-in-out;
+      -moz-transition: .5s ease-in-out;
+      -o-transition: .5s ease-in-out;
+      transition: .5s ease-in-out;
+  }
+  span:nth-child(1) {
+    -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -o-transform-origin: left center;
+    transform-origin: left center;
+  }
+  span:nth-child(2) {
+    margin: 6px 0;
+    -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -o-transform-origin: left center;
+    transform-origin: left center;
+  }
+  span:nth-child(3) {
+    -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -o-transform-origin: left center;
+    transform-origin: left center;
+  }  
+}
+.burger-menu:hover{
+  align-items: center;
+  justify-content: center;
+  span{
+    border-radius: 0;
+  }
+  span:nth-child(1) {
+    width: 16px;
+    margin-top: 12px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+  span:nth-child(2) {
+    margin: -4px auto;
+    border-radius: 2px;
+  } 
+  span:nth-child(3) {
+    width: 16px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+}
+.burger-menu.show-menu:hover{
+  span:nth-child(1) {
+    width: 16px; 
+    -webkit-transform: rotate(225deg);
+    -moz-transform: rotate(225deg);
+    -o-transform: rotate(225deg);
+    transform: rotate(225deg);
+    margin-left: 32px;
+  }
+  span:nth-child(2) {
+    width: 100%;
+    opacity: 1;
+    // margin: 0px;
+  } 
+  span:nth-child(3) {
+    width: 16px;
+    margin-left: 32px;
+    margin-top: 0px;
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    transform: rotate(135deg);
+    // transform: scale(-1, -1) 
+  }
+}
+.burger-menu.show-menu{
+  width: 32px;
+  height: 20px;
+  span:nth-child(1) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  span:nth-child(2) {
+    width: 0%;
+    opacity: 0;
+  } 
+  span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    margin-top: 10px;
+  }
+}
+.navbar {
+    position: relative;
+  }
+.menu-nav {
+  width: 360px;
+  position: absolute;
+  top:0;
+  list-style: none;
+  left: 100%;
+  background-color: #fff;
+  box-shadow: 0 10px 15px -3px rgb(46 41 51 / 8%), 0 4px 6px -2px rgb(71 63 79 / 16%);
+  transition: all ease-in-out 0.5s;
+  z-index: 9;
+  height: 100%;
+  justify-content: center;
+
+  li:nth-child(1){
+    margin-top: 20%;
+  }
+  .navLink{
+    display: block;
+    padding: 1rem;
+    padding-left: 40px;
+    width: fit-content;
+    text-decoration: none;
+    color: $dark;
+    font-size: 20px;
+  }
+  .navLink::after{
+    content: '';
+    display: flex;
+    width: 0;
+    height: 2px;
+    background: $lightBlue;
+    border-radius: 1px;
+  }
+  .navLink:hover::after{
+    content: '';
+    display: flex;
+    width: 100%;
+    height: 2px;
+    background: $lightBlue;
+    border-radius: 1px;
+    animation-name: navunderline;
+    animation-duration: .5s;
+  }
+  @keyframes navunderline {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+}
+.menu-nav.show-menu {
+  transform: translate(-360px, 0);
+  position: fixed;
+}

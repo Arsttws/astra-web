@@ -1,0 +1,107 @@
+$dark: #2F2B2B;
+$lightGray: #d9d9d9;
+$lightBlue: #40C3A4;
+
+.main-content{
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    position: relative;
+    margin-bottom: 200px;
+    .main-text{
+        max-width: 782px;
+        position: relative;
+        margin-top: 160px;
+        h1{
+            font-size: 52px;
+            text-align: justify;
+            span{
+                color: $lightBlue;
+            }
+        }
+
+        .dotes{
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 6px;
+            width: 93px;
+            height: 50px;
+            position: absolute;
+            left: -10px;
+            span{
+                content: '';
+                width: 8px;
+                height: 8px;
+                background: $lightBlue;
+                opacity: .3;
+                border-radius: 6px;
+            }
+        }
+        a:not(.btm-arrow){
+            padding: 14px 35px 14px 14px;
+            display: flex;
+            width: 250px;
+            height: 60px;
+            border: 2px solid $lightBlue;
+            border-radius: 20px;
+            text-decoration: none;
+            color: $dark;
+            font-size: 18px;
+            align-items: center;
+            justify-content: center;
+            margin-top: 60px;
+            
+            img{
+                margin-left: 35px;
+                display: inline-flex;
+            }
+            
+        }
+        a:hover:not(.btm-arrow){
+            background-color: $lightBlue;
+            color: #fff;
+            border: none;
+            transition: all .4s ease-in-out;
+
+            img{
+                transform: translateX(10px);
+                transition: all .4s ease-in-out;
+            }
+        }
+        p{
+            width: fit-content;
+            height: fit-content;
+            font-size: 202px;
+            color: $lightBlue;
+            opacity: .2;
+            margin-top: 70px;
+            cursor: crosshair;
+        }
+        p:hover{
+            opacity: .3;
+            font-size: 206px;
+            transition: all .2s ease-in-out;
+        }
+        .slider-arrow{
+            -webkit-transform: rotate(90deg);
+            -moz-transform: rotate(90deg);
+            -o-transform: rotate(90deg);
+            transform: rotate(90deg);
+            
+        }
+        .slider-arrow:hover{
+            margin-top: 5px;
+            transition: all .2s ease-in-out;
+        }
+    }
+    .slider{
+        position: absolute;
+        right: 0;
+        top: 100px;
+        img:hover{
+            transform: scale(1.05);
+            transition: all 0.3s ease-in-out;
+        }
+    }
+}

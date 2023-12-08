@@ -1,0 +1,86 @@
+$dark: #2F2B2B;
+$lightGray: #d9d9d9;
+$lightBlue: #40C3A4;
+$lightBlueHover: #40c3a454;
+$ExtralightBlueHover: rgba(64, 195, 164, 0.123);
+
+.services-wrapper{
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 60px;
+
+    .services-headline{
+    margin-bottom: 60px;
+    font-size: 50px;
+    width: fit-content;
+    color: $dark;
+}
+.services-headline::after{
+    content: '';
+    display: flex;
+    width: 100%;
+    height: 2px;
+    background: $lightBlue;
+    border-radius: 2px;
+}
+.services{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3%;
+
+    .service:hover{
+        background-color: $lightBlueHover !important;
+        transition: all .3s ease-in-out;
+        margin-top: -10px;
+
+        div{
+            .service-page-link{
+            transition: all .3s ease-in-out;
+            color: $dark !important;
+        }
+        }
+        
+    }
+    div:not(.service-image, .service-wrap){
+        background-color: $ExtralightBlueHover;
+        border-radius: 20px;
+        // border: 1px solid $lightBlue;
+        cursor: pointer;
+        div{
+            div{
+                position: relative;
+                height: 200px;
+                margin-bottom: 20px;
+                .service-image{
+                display: flex;
+                }
+            }p{
+                margin-bottom: 20px;
+                margin-left: 10%;
+                max-width: 80%;
+            }.service-description{
+                max-width: 80%;
+                color: #a4a4a4;
+                font-size: 12px;
+            }
+            .service-page-link{
+                padding: 20px 20px 0 10%;
+                text-decoration: none;
+                color: $lightBlue;
+                cursor:pointer;
+                
+            }.service-page-link:hover{
+                transition: all .3s ease-in-out;
+                color: $dark;
+            }
+        }
+    }  
+    .service-wrap{
+        padding-bottom: 20px;
+    }
+    .service-image{
+        border-radius: 20px 20px 0 0;
+    }
+}
+}
