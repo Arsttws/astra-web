@@ -1,6 +1,5 @@
 import type { AppProps } from 'next/app'
 import 'styles/main.scss'
-import 'styles/burger.scss'
 import 'styles/slider.scss'
 import 'styles/services.scss'
 import 'styles/about.scss'

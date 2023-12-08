@@ -62,6 +62,9 @@ export default function Footer({currentPage = ''}) {
                             <Image src={logo} alt="Логотипы Белкарт" />
                             <Image src={logo} alt="Логотипы Белкарт" />
                             <Image src={logo} alt="Логотип ЕРИП" />
+                            <Image src={logo} alt="Логотип ЕРИП" />
+                            <Image src={logo} alt="Логотип ЕРИП" />
+                            <Image src={logo} alt="Логотип ЕРИП" />
                         </div>
                     </div>
                 </div>

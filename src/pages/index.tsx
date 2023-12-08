@@ -36,7 +36,7 @@ export default function Index(services: ServicePageProps) {
                     <Image className='service-image' src={service.img} alt={service.title} fill />
                   </div>
                   <p>{service.headline}</p>
-                  <p className='service-description'>{service.body.substring(0, 50)}...</p>
+                  <p className='service-description'>{service.body.substring(0, 55)}...</p>
                   <Link legacyBehavior href={`/services/[title]`} as={`/services/${service.title}`}><a className='service-page-link'>Перейти</a></Link>
                 </div>
               </Link>
