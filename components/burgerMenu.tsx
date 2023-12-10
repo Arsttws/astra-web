@@ -17,7 +17,7 @@ export default function Burger() {
                 <li><Link legacyBehavior href={'/about'}><a className="headerLink">О нас</a></Link></li>        
                 <li><Link legacyBehavior href={'/reviews'} ><a className="navLink">Отзывы</a></Link></li>
                 <li><Link legacyBehavior href={'/projects'} ><a className="navLink">Проекты</a></Link></li>
-                <li><Link legacyBehavior href={'/services'} ><a className="navLink">Услуги</a></Link></li>
+                {/* <li><Link legacyBehavior href={'/services'} ><a className="navLink">Услуги</a></Link></li> */}
                 <li><Link legacyBehavior href={'/solutions'} ><a className="navLink">Пакеты решений</a></Link></li>
                 <li><Link legacyBehavior href={'/connect'} ><a className="navLink">Связаться с нами</a></Link></li>
             </ul>

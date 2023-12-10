@@ -110,3 +110,87 @@ $lightBlueHover: #40c3a454;
         }
     }
 }
+
+@media screen and (max-width: 1024px) {
+    .solutionWrapper{
+        max-width: 600px;
+        .content{
+            .image{
+                max-width: 600px;
+                height: 400px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .solutionWrapper{
+        max-width: 400px;
+        .content{
+            .image{
+                max-width: 400px;
+                height: 230px;
+            }
+            .main{
+                .headline{
+                    font-size: 36px;
+                }
+                p{
+                    font-size: 16px;
+                }
+                .advantages{
+                    ul{
+                        li{
+                            font-size: 16px;
+                        }
+                    }
+                }
+                .order{
+                    .toOrder{
+                        font-size: 16px;
+                    }
+                    .connectLink{
+                        padding: 15px 30px;
+                        border-radius: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 440px) {
+    .solutionWrapper{
+        max-width: 280px;
+        .content{
+            .image{
+                max-width: 280px;
+                height: 140px;
+            }
+            .main{
+                .headline{
+                    font-size: 32px;
+                }
+                p{
+                    font-size: 14px;
+                }
+                .advantages{
+                    ul{
+                        li{
+                            font-size: 14px;
+                        }
+                    }
+                }
+                .order{
+                    .toOrder{
+                        font-size: 14px;
+                    }
+                    .connectLink{
+                        font-size: 14px;
+                        padding: 15px 30px;
+                        border-radius: 15px;
+                    }
+                }
+            }
+        }
+    }
+}

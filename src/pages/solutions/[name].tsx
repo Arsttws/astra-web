@@ -55,38 +55,38 @@ export default function Solution({solution}: SolutionPageProps) {
     return(
         <MainLayout desc="" currentPage="solution">
           <div className={styles.solutionWrapper}>
-        <div className={styles.content}>
-          <div className={styles.image}>
-            <Image src={solution.img} alt={solution.name} fill/>
-          </div>
-          <div className={styles.main}>
-            <h2 className={`${styles.headline} ${jost.className}`}>{solution.title}</h2>
-            <p className={styles.body}>{solution.info}</p>
-            <div className={styles.advantages}>
-              <ul>
-                <li><span>{solution.name}</span></li>
-                <li><span>{solution.name}</span></li>
-                <li><span>{solution.name}</span></li>
-              </ul>
-            </div>
-            <span className={styles.line}></span>
-            <div className={styles.order}>
-              <p className={styles.toOrder}>Для оформления заказа свяжитесь с нами<br />удобным Вам способом:</p>
-              <Link href={'/connect'} className={styles.connectLink}>Оставить заявку</Link>
-              <a href={'/connect'} className={styles.connectLink}>Позвонить</a>
-              <div className={styles.write}>
-                <p>Или напишите нам в один из мессенджеров</p>
-                <div className={styles.links}>
-                  <a href="https://www.instagram.com/" target="_blank"><Image src={inst} alt="instagram"/></a>
-                  <a href="https://web.telegram.org/a/" target="_blank"><Image src={tg} alt="telegram"/></a>
-                  <a href="https://www.whatsapp.com/" target="_blank"><Image src={viber} alt="Whatsapp"/></a>
-                  <a href="https://www.viber.com/en/" target="_blank"><Image src={whatsapp} alt="Viber"/></a>
+            <div className={styles.content}>
+              <div className={styles.image}>
+                <Image src={solution.img} alt={solution.name} fill/>
+              </div>
+              <div className={styles.main}>
+                <h2 className={`${styles.headline} ${jost.className}`}>{solution.title}</h2>
+                <p className={styles.body}>{solution.info}</p>
+                <div className={styles.advantages}>
+                  <ul>
+                    <li><span>{solution.name}</span></li>
+                    <li><span>{solution.name}</span></li>
+                    <li><span>{solution.name}</span></li>
+                  </ul>
+                </div>
+                <span className={styles.line}></span>
+                <div className={styles.order}>
+                  <p className={styles.toOrder}>Для оформления заказа свяжитесь с нами<br />удобным Вам способом:</p>
+                  <Link href={'/connect'} className={styles.connectLink}>Оставить заявку</Link>
+                  <a href={'/connect'} className={styles.connectLink}>Позвонить</a>
+                  <div className={styles.write}>
+                    <p>Или напишите нам в один из мессенджеров</p>
+                    <div className={styles.links}>
+                      <a href="https://www.instagram.com/" target="_blank"><Image src={inst} alt="instagram"/></a>
+                      <a href="https://web.telegram.org/a/" target="_blank"><Image src={tg} alt="telegram"/></a>
+                      <a href="https://www.whatsapp.com/" target="_blank"><Image src={viber} alt="Whatsapp"/></a>
+                      <a href="https://www.viber.com/en/" target="_blank"><Image src={whatsapp} alt="Viber"/></a>
+                    </div>
+                  </div>
                 </div>
               </div>
+              </div>
             </div>
-          </div>
-          </div>
-      </div>
         </MainLayout>
     )
 }

@@ -67,19 +67,20 @@ export default function ContactForm() {
                         <select 
                             className={`${styles.input} ${jost.className}`}
                             name="subject"
+                            value={values.subject}
+                            onChange={handleChange}
                             autoComplete="off"   
                         >
-                            <option disabled>Выберите тему</option>
-                            <option value="Тема">Консультация</option>
-                            <option value="Тема">Оформление заказа</option>
-                            <option value="Тема">Технические вопросы</option>
-                            <option value="Тема">Иные вопросы</option>
+                            <option>Консультация</option>
+                            <option>Оформление заказа</option>
+                            <option>Технические вопросы</option>
+                            <option>Иные вопросы</option>
                         </select>
                         <label className={styles.label} htmlFor="email">Email:</label>
                         <input 
+                            type="email"
                             className={`${styles.input} ${jost.className}`}
                             name="email"
-                            type="email"
                             placeholder='example@gmail.com'
                             value={values.email}
                             onChange={handleChange}
