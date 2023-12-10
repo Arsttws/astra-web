@@ -61,16 +61,6 @@ eval("// Exports\nmodule.exports = {\n\t\"style\": {\"fontFamily\":\"'__jost_1b0
 
 /***/ }),
 
-/***/ "./node_modules/next/font/local/target.css?{\"path\":\"src\\\\pages\\\\solutions\\\\[name].tsx\",\"import\":\"\",\"arguments\":[{\"src\":\"../../../src/fonts/Jost/Jost-Regular.ttf\",\"display\":\"swap\"}],\"variableName\":\"jost\"}":
-/*!******************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/font/local/target.css?{"path":"src\\pages\\solutions\\[name].tsx","import":"","arguments":[{"src":"../../../src/fonts/Jost/Jost-Regular.ttf","display":"swap"}],"variableName":"jost"} ***!
-  \******************************************************************************************************************************************************************************************************************/
-/***/ ((module) => {
-
-eval("// Exports\nmodule.exports = {\n\t\"style\": {\"fontFamily\":\"'__jost_1b0fde', '__jost_Fallback_1b0fde'\"},\n\t\"className\": \"__className_1b0fde\"\n};\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9ub2RlX21vZHVsZXMvbmV4dC9mb250L2xvY2FsL3RhcmdldC5jc3M/e1wicGF0aFwiOlwic3JjXFxcXHBhZ2VzXFxcXHNvbHV0aW9uc1xcXFxbbmFtZV0udHN4XCIsXCJpbXBvcnRcIjpcIlwiLFwiYXJndW1lbnRzXCI6W3tcInNyY1wiOlwiLi4vLi4vLi4vc3JjL2ZvbnRzL0pvc3QvSm9zdC1SZWd1bGFyLnR0ZlwiLFwiZGlzcGxheVwiOlwic3dhcFwifV0sXCJ2YXJpYWJsZU5hbWVcIjpcImpvc3RcIn0iLCJtYXBwaW5ncyI6IkFBQUE7QUFDQTtBQUNBLFdBQVcseURBQXlEO0FBQ3BFO0FBQ0EiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9hc3RyYS13ZWIvLi9ub2RlX21vZHVsZXMvbmV4dC9mb250L2xvY2FsL3RhcmdldC5jc3M/ZjU4NiJdLCJzb3VyY2VzQ29udGVudCI6WyIvLyBFeHBvcnRzXG5tb2R1bGUuZXhwb3J0cyA9IHtcblx0XCJzdHlsZVwiOiB7XCJmb250RmFtaWx5XCI6XCInX19qb3N0XzFiMGZkZScsICdfX2pvc3RfRmFsbGJhY2tfMWIwZmRlJ1wifSxcblx0XCJjbGFzc05hbWVcIjogXCJfX2NsYXNzTmFtZV8xYjBmZGVcIlxufTtcbiJdLCJuYW1lcyI6W10sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./node_modules/next/font/local/target.css?{\"path\":\"src\\\\pages\\\\solutions\\\\[name].tsx\",\"import\":\"\",\"arguments\":[{\"src\":\"../../../src/fonts/Jost/Jost-Regular.ttf\",\"display\":\"swap\"}],\"variableName\":\"jost\"}\n");
-
-/***/ }),
-
 /***/ "./node_modules/next/font/local/target.css?{\"path\":\"src\\\\pages\\\\solutions\\\\index.tsx\",\"import\":\"\",\"arguments\":[{\"src\":\"../../../src/fonts/Jost/Jost-Regular.ttf\",\"display\":\"swap\"}],\"variableName\":\"jost\"}":
 /*!*****************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/next/font/local/target.css?{"path":"src\\pages\\solutions\\index.tsx","import":"","arguments":[{"src":"../../../src/fonts/Jost/Jost-Regular.ttf","display":"swap"}],"variableName":"jost"} ***!
