@@ -1,5 +1,4 @@
 import Head from "next/head"
-import Link from "next/link"
 import Header from "./Header"
 import localFont from 'next/font/local'
 import Footer from "./footer"
@@ -9,7 +8,7 @@ const montserrat = localFont({
     display: 'swap',
   })
 
-export function MainLayout({children, desc = '', currentPage=''}) {
+export function MainLayout({children}: any, desc = '', currentPage='') {
     return (
         <>
             <Head>
