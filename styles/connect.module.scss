@@ -58,3 +58,8 @@ $dark: #2F2B2B;
     cursor: no-drop;
 }
 
+@media screen and (max-width: 660px) {
+    .connectWrapper{
+        max-width: 94%;
+    }
+}

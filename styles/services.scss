@@ -27,12 +27,12 @@ $ExtralightBlueHover: rgba(64, 195, 164, 0.123);
 .services{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 3%;
+    gap: 30px;
 
     .service:hover{
         background-color: $lightBlueHover !important;
         transition: all .3s ease-in-out;
-        margin-top: -10px;
+        transform: translateY(-10px);
 
         div{
             .service-page-link{
@@ -83,4 +83,98 @@ $ExtralightBlueHover: rgba(64, 195, 164, 0.123);
         border-radius: 20px 20px 0 0;
     }
 }
+}
+//===================== 1280px ========================================
+
+@media screen and (max-width: 1280px) {
+    .services-wrapper{
+        max-width: 1024px;
+    
+        .services-headline{
+        font-size: 46px;
+        }
+        .services{
+            grid-template-columns: repeat(3, 1fr);
+            .service{
+                div{
+                    p:nth-child(3){
+                        margin-bottom: 50px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//===================== 1024px ========================================
+
+@media screen and (max-width: 1024px) {
+    .services-wrapper{
+        max-width: 660px;
+    
+        .services-headline{
+        font-size: 42px;
+        }
+        .services{
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+//===================== 768px ========================================
+
+@media screen and (max-width: 768px) {
+    .services-wrapper{
+        max-width: 480px;
+    
+        .services-headline{
+        font-size: 40px;
+        }
+        // .services{
+        //     div:not(.service-image, .service-wrap) {
+        //         div{
+        //             p{
+        //                 min-height: 52px;
+        //             }
+        //         }
+        //     }
+        // } 
+    }
+}
+
+//===================== 660px ========================================
+
+@media screen and (max-width: 660px) {
+    .services-wrapper{
+        max-width: 480px;
+    
+        .services-headline{
+        font-size: 40px;
+        }
+        .services{
+            grid-template-columns: repeat(1, 1fr);
+            .service{
+                max-width: 340px;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+//===================== 480px ========================================
+
+@media screen and (max-width: 480px) {
+    .services-wrapper{
+        max-width: 280px;
+    
+        .services-headline{
+        font-size: 36px;
+        }
+        // .services{
+        //     .service{
+        //         max-width: 280px;
+        //         margin: 0 auto;
+        //     }
+        // }
+    }
 }

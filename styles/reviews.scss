@@ -38,3 +38,9 @@ $lightBlueHover: #40c3a454;
         }
     }
 }
+
+@media screen and (max-width: 840px){
+    .reviews-wrapper{
+        max-width: 94%;
+    }
+}

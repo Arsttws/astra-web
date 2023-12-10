@@ -209,7 +209,7 @@ header{
               position: relative;
             }
           .menu-nav {
-            width: 360px;
+            width: 320px;
             position: absolute;
             top:0;
             list-style: none;
@@ -222,7 +222,7 @@ header{
             justify-content: center;
 
             li:nth-child(1){
-              margin-top: 20%;
+              margin-top: 120px;
             }
             .navLink, .headerLink{
               padding: 1rem;
@@ -266,7 +266,7 @@ header{
             }
           }
           .menu-nav.show-menu {
-            transform: translate(-360px, 0);
+            transform: translate(-320px, 0);
             position: fixed;
           }
     }
@@ -292,14 +292,14 @@ header{
     .services{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        gap: 3%;
+        gap: 30px;
         .service{
             display: none;
         }
         .service:hover{
             background-color: #40c3a471 !important;
             transition: all .3s ease-in-out;
-            margin-top: -10px;
+            transform: translateY(-10px);
             div{
                 .service-page-link{
                 transition: all .3s ease-in-out;
@@ -313,19 +313,19 @@ header{
             border-radius: 20px;
             // border: 1px solid $lightBlue;
             cursor: pointer;
-            display: flex;
+            display: block;
             div{
                 div{
                     position: relative;
                     height: 200px;
                     margin-bottom: 20px;
                     .service-image{
-                    display: flex;
+                    display: block;
                     }
                 }p{
                     margin-bottom: 20px;
                     margin-left: 10%;
-                    max-width: 80%;
+                    max-width: 80%; 
                 }.service-description{
                     max-width: 80%;
                     color: #a4a4a4;
@@ -585,7 +585,7 @@ footer{
         max-width: 1024px;
         .services{
             grid-template-columns: repeat(3, 1fr);
-            gap: 5%;
+            gap: 30px;
 
             .service{
                 display: none;
@@ -604,7 +604,7 @@ footer{
     }
     .Route{
         max-width: 1024px;
-        margin-top: 150px;
+        // margin-top: 150px;
     }
     footer{
         .footer-wrapper{
@@ -648,7 +648,7 @@ footer{
         max-width: 660px;
         .services{
             grid-template-columns: repeat(2, 1fr);
-            gap: 5%;
+            gap: 30px;
 
             .service{
                 display: none;
@@ -679,7 +679,7 @@ footer{
                     margin: 0 auto;
                     display: grid;
                     grid-template-columns: repeat(5, 1fr);
-                    gap: 3%;
+                    gap: 30px;
                     img{
                         margin: 0 auto;
                     }
@@ -750,7 +750,7 @@ footer{
     }
 
     .Route{
-        margin-top: 260px;
+        // margin-top: 260px;
         max-width: 460px;
         .Route-headline{
             font-size: 40px;
@@ -784,6 +784,13 @@ footer{
     header{
         .header-wrapper{
             max-width: 320px;   
+            .logo{
+                a{
+                    img{
+                        width: 180px;
+                    }
+                }
+            }
         }
     }
 
