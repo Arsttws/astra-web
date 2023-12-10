@@ -81,16 +81,6 @@ eval("// Exports\nmodule.exports = {\n\t\"style\": {\"fontFamily\":\"'__montserr
 
 /***/ }),
 
-/***/ "./node_modules/next/font/local/target.css?{\"path\":\"src\\\\pages\\\\solutions\\\\index.tsx\",\"import\":\"\",\"arguments\":[{\"src\":\"../../../src/fonts/Jost/Jost-Regular.ttf\",\"display\":\"swap\"}],\"variableName\":\"jost\"}":
-/*!*****************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/font/local/target.css?{"path":"src\\pages\\solutions\\index.tsx","import":"","arguments":[{"src":"../../../src/fonts/Jost/Jost-Regular.ttf","display":"swap"}],"variableName":"jost"} ***!
-  \*****************************************************************************************************************************************************************************************************************/
-/***/ ((module) => {
-
-eval("// Exports\nmodule.exports = {\n\t\"style\": {\"fontFamily\":\"'__jost_1b0fde', '__jost_Fallback_1b0fde'\"},\n\t\"className\": \"__className_1b0fde\"\n};\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9ub2RlX21vZHVsZXMvbmV4dC9mb250L2xvY2FsL3RhcmdldC5jc3M/e1wicGF0aFwiOlwic3JjXFxcXHBhZ2VzXFxcXHNvbHV0aW9uc1xcXFxpbmRleC50c3hcIixcImltcG9ydFwiOlwiXCIsXCJhcmd1bWVudHNcIjpbe1wic3JjXCI6XCIuLi8uLi8uLi9zcmMvZm9udHMvSm9zdC9Kb3N0LVJlZ3VsYXIudHRmXCIsXCJkaXNwbGF5XCI6XCJzd2FwXCJ9XSxcInZhcmlhYmxlTmFtZVwiOlwiam9zdFwifSIsIm1hcHBpbmdzIjoiQUFBQTtBQUNBO0FBQ0EsV0FBVyx5REFBeUQ7QUFDcEU7QUFDQSIsInNvdXJjZXMiOlsid2VicGFjazovL2FzdHJhLXdlYi8uL25vZGVfbW9kdWxlcy9uZXh0L2ZvbnQvbG9jYWwvdGFyZ2V0LmNzcz9mNTg2Il0sInNvdXJjZXNDb250ZW50IjpbIi8vIEV4cG9ydHNcbm1vZHVsZS5leHBvcnRzID0ge1xuXHRcInN0eWxlXCI6IHtcImZvbnRGYW1pbHlcIjpcIidfX2pvc3RfMWIwZmRlJywgJ19fam9zdF9GYWxsYmFja18xYjBmZGUnXCJ9LFxuXHRcImNsYXNzTmFtZVwiOiBcIl9fY2xhc3NOYW1lXzFiMGZkZVwiXG59O1xuIl0sIm5hbWVzIjpbXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./node_modules/next/font/local/target.css?{\"path\":\"src\\\\pages\\\\solutions\\\\index.tsx\",\"import\":\"\",\"arguments\":[{\"src\":\"../../../src/fonts/Jost/Jost-Regular.ttf\",\"display\":\"swap\"}],\"variableName\":\"jost\"}\n");
-
-/***/ }),
-
 /***/ "./node_modules/next/dist/client/add-base-path.js":
 /*!********************************************************!*\
   !*** ./node_modules/next/dist/client/add-base-path.js ***!

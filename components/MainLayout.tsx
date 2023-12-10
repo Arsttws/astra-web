@@ -1,14 +1,22 @@
 import Head from "next/head"
+import Link from "next/link"
 import Header from "./Header"
 import localFont from 'next/font/local'
 import Footer from "./footer"
+import { ReactNode } from "react"
 
 const montserrat = localFont({
     src: '../src/fonts/montserrat/Montserrat-Regular.ttf',
     display: 'swap',
   })
 
-export function MainLayout({children}: any, desc = '', currentPage='') {
+interface MyProps {
+    children?: ReactNode;
+    desc: string
+    currentPage: string
+}
+
+export function MainLayout ({children, desc, currentPage} : MyProps) {
     return (
         <>
             <Head>
@@ -19,7 +27,7 @@ export function MainLayout({children}: any, desc = '', currentPage='') {
             </Head>
             <Header currentPage={currentPage}/>
             <main className={montserrat.className}>
-                {children}
+                { children }
             </main>
             <Footer currentPage={currentPage}/>
         </>
