@@ -18,7 +18,7 @@ const jost = localFont({
 
 
 export const getStaticPaths = async() => {
-  const res = await fetch('https://jsonplaceholder.typicode.com/posts')
+  const res = await fetch('http://localhost:4200/services')
   const data = await res.json()
 
   const paths = data.map((service: MyServices) => {
@@ -36,7 +36,7 @@ export const getStaticPaths = async() => {
 export const getStaticProps = async(context: any) => {
   const title = context.params.title
 
-  const res = await fetch(`https://jsonplaceholder.typicode.com/posts`)
+  const res = await fetch(`http://localhost:4200/services`)
   const json = await res.json()
   const data = json.find((service: MyServices) => service.title === title)
   
