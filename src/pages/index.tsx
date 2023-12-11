@@ -33,7 +33,7 @@ export default function Index(services: ServicePageProps) {
               <Link legacyBehavior href={`/services/[title]`} as={`/services/${service.title}`}>
                 <div className='service-wrap'>
                   <div className='service-image'>
-                    <Image className='service-image' src={service.img} alt={service.title} fill />
+                    <Image className='service-image' src={service.img} alt={service.title} fill sizes='(max-width: 100%)'/>
                   </div>
                   <p>{service.headline}</p>
                   <p className='service-description'>{service.body.substring(0, 55)}...</p>

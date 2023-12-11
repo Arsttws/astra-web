@@ -39,7 +39,7 @@ export const getStaticProps = async(context: any) => {
   const res = await fetch(`http://localhost:4200/services`)
   const json = await res.json()
   const data = json.find((service: MyServices) => service.title === title)
-  
+  console.log(data)
 
   return{
     props: {service: data}
