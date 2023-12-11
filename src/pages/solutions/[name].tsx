@@ -17,7 +17,7 @@ const jost = localFont({
   })
 
 export const getStaticPaths = async() => {
-    const res = await fetch('http://localhost:4200/solutions')
+    const res = await fetch('https://mocki.io/v1/ab3284a8-319e-4462-95ad-6a301b2f7419')
     const data = await res.json()
   
     const paths = data.map((solution: MySolutions) => {
@@ -35,7 +35,7 @@ export const getStaticPaths = async() => {
   export const getStaticProps = async(context: any) => {
     const name = context.params.name
   
-    const res = await fetch(`http://localhost:4200/solutions`)
+    const res = await fetch(`https://mocki.io/v1/ab3284a8-319e-4462-95ad-6a301b2f7419`)
     const json = await res.json()
     const data = json.find((solution: MySolutions) => solution.name === name)
     

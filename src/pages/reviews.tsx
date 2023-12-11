@@ -4,7 +4,7 @@ import { Pagination, Navigation } from 'swiper/modules';
 import { MyReviews } from "../../interfaces/reviews";
 
 export const getStaticProps = async () => {
-    const res = await fetch('http://localhost:4200/reviews')
+    const res = await fetch('https://mocki.io/v1/aa9239e1-be19-4bbc-b63b-7291b4703998')
     const data = await res.json()
   
   
