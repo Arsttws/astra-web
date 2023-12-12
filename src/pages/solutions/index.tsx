@@ -10,7 +10,7 @@ const jost = localFont({
   })
 
   export const getStaticProps = async () => {
-    const res = await fetch('https://mocki.io/v1/ab3284a8-319e-4462-95ad-6a301b2f7419')
+    const res = await fetch('https://mocki.io/v1/15f89c7f-184e-46cb-a72b-f030a865a1bd')
     const data = await res.json()
   
     return{
@@ -39,7 +39,7 @@ export default function Solutions(solutions: SolutionsPageProps) {
                                     </div>
                                     <p className={`solution-title ${jost.className}`}>{solution.title}</p>
                                     <p className='solution-description'>{solution.info.substring(0, 140)}...</p>
-                                    <p className="price">Цена: <span>{solution.price}$</span></p>
+                                    <p className="price">Цена: от <span>{solution.price}$</span></p>
                                     <Link legacyBehavior href={`/solutions/[title]`} as={`/solutions/${solution.title}`}><a className='solution-page-link'>Перейти</a></Link>
                                 </div>
                             </Link>

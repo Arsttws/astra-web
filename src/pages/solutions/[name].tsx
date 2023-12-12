@@ -17,7 +17,7 @@ const jost = localFont({
   })
 
 export const getStaticPaths = async() => {
-    const res = await fetch('https://mocki.io/v1/ab3284a8-319e-4462-95ad-6a301b2f7419')
+    const res = await fetch('https://mocki.io/v1/15f89c7f-184e-46cb-a72b-f030a865a1bd')
     const data = await res.json()
   
     const paths = data.map((solution: MySolutions) => {
@@ -35,7 +35,7 @@ export const getStaticPaths = async() => {
   export const getStaticProps = async(context: any) => {
     const name = context.params.name
   
-    const res = await fetch(`https://mocki.io/v1/ab3284a8-319e-4462-95ad-6a301b2f7419`)
+    const res = await fetch(`https://mocki.io/v1/15f89c7f-184e-46cb-a72b-f030a865a1bd`)
     const json = await res.json()
     const data = json.find((solution: MySolutions) => solution.name === name)
     
@@ -64,11 +64,14 @@ export default function Solution({solution}: SolutionPageProps) {
                 <p className={styles.body}>{solution.info}</p>
                 <div className={styles.advantages}>
                   <ul>
-                    <li><span>{solution.name}</span></li>
-                    <li><span>{solution.name}</span></li>
-                    <li><span>{solution.name}</span></li>
+                    <li><span>{solution.desc1}</span></li>
+                    <li><span>{solution.desc2}</span></li>
+                    <li><span>{solution.desc3}</span></li>
                   </ul>
                 </div>
+                <p className={styles.price}>от <span>{solution.price}$</span></p>
+                <p className={styles.desc4}>{solution.desc4} от <span>39$</span>/месяц</p>
+                <p className={styles.priceDesc}>*цена, указанная на сайте не является окончательной и варьируется в зависмости от ряда факторов</p>
                 <span className={styles.line}></span>
                 <div className={styles.order}>
                   <p className={styles.toOrder}>Для оформления заказа свяжитесь с нами<br />удобным Вам способом:</p>

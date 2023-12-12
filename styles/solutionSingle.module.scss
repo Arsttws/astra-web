@@ -46,6 +46,33 @@ $lightBlueHover: #40c3a454;
                 display: flex;
                 width: 100%;
             }
+            .price {
+                margin-bottom: 40px;
+                width: fit-content;
+                span{
+                    color: $lightBlue;
+                    font-size: 22px;
+                }
+            }
+            .price::after{
+                content: '';
+                display: flex;
+                width: 100%;
+                background: $lightBlue;
+                height: 2px;
+            }
+            .desc4{
+                font-size: 16px;
+                margin-bottom: 40px;
+                span{
+                    color: $lightBlue;
+                    font-size: 20px;
+                }
+            }
+            .priceDesc{
+                color: #a4a4a4;
+                font-size: 12px;
+            }
             .advantages{
                 ul{
                     margin-bottom: 20px;
@@ -137,6 +164,13 @@ $lightBlueHover: #40c3a454;
                 }
                 p{
                     font-size: 16px;
+                }
+                .desc4{
+                    font-size: 14px;
+                    span{
+                        color: $lightBlue;
+                        font-size: 18px;
+                    }
                 }
                 .advantages{
                     ul{
