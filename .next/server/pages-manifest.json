@@ -2,9 +2,8 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/services": "pages/services.js",
+  "/solutions": "pages/solutions.js",
   "/solutions/[name]": "pages/solutions/[name].js",
-  "/services/[title]": "pages/services/[title].js",
-  "/projects": "pages/projects.js",
-  "/solutions": "pages/solutions.js"
+  "/connect": "pages/connect.js",
+  "/api/contact": "pages/api/contact.js"
 }

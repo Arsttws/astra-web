@@ -76,7 +76,7 @@ export default function Solution({solution}: SolutionPageProps) {
                 <div className={styles.order}>
                   <p className={styles.toOrder}>Для оформления заказа свяжитесь с нами<br />удобным Вам способом:</p>
                   <Link href={'/connect'} className={styles.connectLink}>Оставить заявку</Link>
-                  <a href={'/connect'} className={styles.connectLink}>Позвонить</a>
+                  <a href={'tel: +375251234567'} className={styles.connectLink}>Позвонить</a>
                   <div className={styles.write}>
                     <p>Или напишите нам в один из мессенджеров</p>
                     <div className={styles.links}>

@@ -32,6 +32,14 @@ export default function ContactForm() {
     }))
 
     const onSubmit = async(e: any) =>{
+        const btn = document.getElementById('button')
+        const input = document.querySelector('input')
+        const text = document.querySelector('textarea')
+        if (btn === null) {
+            alert('oops');
+          } else {
+            btn.innerHTML = 'Отправка...'
+          }
         e.preventDefault(),
         setLoading(true)
         setState((prev) =>({
@@ -39,8 +47,12 @@ export default function ContactForm() {
         }))
         try {
             await sendContactForm(values)
-            alert('Ваше сообщение было отправлено')
-            
+
+            if (btn === null) {
+              } else {
+                btn.innerHTML = 'Отправить'
+              }
+            alert('Ваше сообщение успешно отправлено')
         } catch (error) {
             error: error
         }
@@ -51,7 +63,8 @@ export default function ContactForm() {
                 <div className={styles.formContainer}>
                     <form className={styles.form} name='ContactForm'>
                         <label className={styles.label} htmlFor="name">Имя:</label>
-                        <input 
+                        <input
+                            id='cleanValue' 
                             className={`${styles.input} ${jost.className}`}
                             name="name"
                             type="text"
@@ -64,13 +77,14 @@ export default function ContactForm() {
                             autoComplete="off"
                         />
                         <label className={styles.label} htmlFor="subject">Тема:</label>
-                        <select 
+                        <select
                             className={`${styles.input} ${jost.className}`}
                             name="subject"
                             value={values.subject}
                             onChange={handleChange}
                             autoComplete="off"   
                         >
+                            <option disabled> Выберите тему</option>
                             <option>Консультация</option>
                             <option>Оформление заказа</option>
                             <option>Технические вопросы</option>
@@ -78,7 +92,7 @@ export default function ContactForm() {
                             <option>Иные вопросы</option>
                         </select>
                         <label className={styles.label} htmlFor="email">Email:</label>
-                        <input 
+                        <input
                             type="email"
                             className={`${styles.input} ${jost.className}`}
                             name="email"
@@ -92,7 +106,7 @@ export default function ContactForm() {
                         />
                         <label className={styles.label} htmlFor="message">Сообщение:</label>
                         <textarea
-                            className={jost.className}
+                            className={`${jost.className} textarea`}
                             name="message"
                             value={values.message}
                             onChange={handleChange}
@@ -105,9 +119,10 @@ export default function ContactForm() {
                         />
                         <button
                             type="submit"
+                            id='button'
                             disabled={!values.name || !values.email || !values.message}
                             onClick={onSubmit}
-                            >Send</button>
+                            >Отправить</button>
                     </form>
                 </div>
             </div>
