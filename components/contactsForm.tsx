@@ -33,8 +33,6 @@ export default function ContactForm() {
 
     const onSubmit = async(e: any) =>{
         const btn = document.getElementById('button')
-        const input = document.querySelector('input')
-        const text = document.querySelector('textarea')
         if (btn === null) {
             alert('oops');
           } else {

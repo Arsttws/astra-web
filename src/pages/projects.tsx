@@ -44,7 +44,7 @@ export default function Projects() {
             },
             {
                 id: 6,
-                title: 'Astra',
+                title: 'Astra.web',
                 link: 'https://e-astra-web.vercel.app/',
                 img: astra
             }
