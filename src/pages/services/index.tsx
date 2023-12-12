@@ -4,7 +4,7 @@ import Image from 'next/image'
 import { MyServices } from '../../../interfaces/service'
 
 export const getStaticProps = async () => {
-  const res = await fetch('https://mocki.io/v1/a30938e8-2921-42d1-9c93-9c41283a88cc')
+  const res = await fetch('https://mocki.io/v1/c4c3e10d-4cb7-413f-8f37-5f656253ab93')
   const data = await res.json()
 
 

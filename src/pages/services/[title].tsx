@@ -18,7 +18,7 @@ const jost = localFont({
 
 
 export const getStaticPaths = async() => {
-  const res = await fetch('https://mocki.io/v1/a30938e8-2921-42d1-9c93-9c41283a88cc')
+  const res = await fetch('https://mocki.io/v1/c4c3e10d-4cb7-413f-8f37-5f656253ab93')
   const data = await res.json()
 
   const paths = data.map((service: MyServices) => {
@@ -36,7 +36,7 @@ export const getStaticPaths = async() => {
 export const getStaticProps = async(context: any) => {
   const title = context.params.title
 
-  const res = await fetch(`https://mocki.io/v1/a30938e8-2921-42d1-9c93-9c41283a88cc`)
+  const res = await fetch(`https://mocki.io/v1/c4c3e10d-4cb7-413f-8f37-5f656253ab93`)
   const json = await res.json()
   const data = json.find((service: MyServices) => service.title === title)
   console.log(data)
@@ -63,9 +63,9 @@ export default function Service({service}: ServicePageProps) {
             <p className={styles.body}>{service.body}</p>
             <div className={styles.advantages}>
               <ul>
-                <li><span>{service.headline}</span></li>
-                <li><span>{service.headline}</span></li>
-                <li><span>{service.headline}</span></li>
+                <li><span>{service.advantage1}</span></li>
+                <li><span>{service.advantage2}</span></li>
+                <li><span>{service.advantage3}</span></li>
               </ul>
             </div>
             <span className={styles.line}></span>
