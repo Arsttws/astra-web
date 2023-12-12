@@ -26,12 +26,25 @@ $lightBlueHover: #40c3a454;
             border-radius: 20px;
             cursor: grab;
             .review-wrap{
+                .quote-img{
+                    padding: 0 80px;
+                }
                 .review-main{
                     padding: 0 80px;
                     color: $dark;
                     .text{
                         font-size: 16px;
                         padding: 20px 0;
+                    }
+                    .name{
+                        font-size: 20px;
+                        font-weight: 600;
+                        margin-bottom: 15px;
+                        margin-top: 20px;
+                    }
+                    .original{
+                        // text-decoration: none;
+                        color: #a4a4a4;
                     }
                 }
             }
@@ -42,5 +55,30 @@ $lightBlueHover: #40c3a454;
 @media screen and (max-width: 840px){
     .reviews-wrapper{
         max-width: 94%;
+    }
+}
+@media screen and (max-width: 480px){
+    .reviews-wrapper{
+        .mySwiper{
+            .review{
+                .review-wrap{
+                    .quote-img{
+                        padding: 0 40px;
+                    }
+                    .review-main{
+                        padding: 0 40px;
+                        color: $dark;
+                        .text{
+                            font-size: 14px;
+                        }
+                        .name{
+                            font-size: 18px;
+                            font-weight: 500;
+                            margin-bottom: 5px;
+                        }
+                    }
+                }
+            }
+        }
     }
 }

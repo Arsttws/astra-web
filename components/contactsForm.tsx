@@ -74,6 +74,7 @@ export default function ContactForm() {
                             <option>Консультация</option>
                             <option>Оформление заказа</option>
                             <option>Технические вопросы</option>
+                            <option>Оставить отзыв</option>
                             <option>Иные вопросы</option>
                         </select>
                         <label className={styles.label} htmlFor="email">Email:</label>
