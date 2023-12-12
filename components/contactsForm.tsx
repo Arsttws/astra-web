@@ -53,6 +53,11 @@ export default function ContactForm() {
             alert('Ваше сообщение успешно отправлено')
         } catch (error) {
             error: error
+            if (btn === null) {
+            } else {
+              btn.innerHTML = 'Отправить'
+            }
+            alert('Ошибка при отпрвке сообщения, поробуйте позже')
         }
     }
 
