@@ -14,7 +14,7 @@ export default function Custom404() {
                     <Link legacyBehavior href={'/services'}><a className={style.link}>Услуги</a></Link>
                     <Link legacyBehavior href={'/projects'}><a className={style.link}>Проекты</a></Link>
                     <Link legacyBehavior href={'/solutions'}><a className={style.link}>Пакеты решений</a></Link>
-                    <Link legacyBehavior href={'/contacts'}><a className={style.link}>Контакты</a></Link>
+                    {/* <Link legacyBehavior href={'/contacts'}><a className={style.link}>Контакты</a></Link> */}
                     <Link legacyBehavior href={'/about'}><a className={style.link}>О нас</a></Link>
                     <Link legacyBehavior href={'/reviews'}><a className={style.link}>Отзывы</a></Link>
                     <Link legacyBehavior href={'/connect'}><a className={style.link}>Связаться с нами</a></Link>
