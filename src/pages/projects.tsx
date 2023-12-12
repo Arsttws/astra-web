@@ -3,6 +3,10 @@ import Image from "next/image";
 import unicars from '../../public/images/unicars.png'
 import kanso from '../../public/images/kanso.png'
 import topka from '../../public/images/topka.png'
+import kvalirem from '../../public/images/kvalirem.png'
+import beton from '../../public/images/beton.png'
+import astra from '../../public/images/astra.png'
+
 
 export default function Projects() {
 
@@ -10,39 +14,39 @@ export default function Projects() {
         projects: [
             {
                 id: 1,
-                title: 'Unicars',
+                title: 'Unicars.by',
                 link: 'https://unicars.by',
                 img: unicars
             },
             {
                 id: 2,
-                title: 'Kanso',
+                title: 'Kanso.by',
                 link: 'https://kanso.by',
                 img: kanso
             },
             {
                 id: 3,
-                title: 'MyTopka',
+                title: 'MyTopka.by',
                 link: 'https://mytopka.by',
                 img: topka
             },
             {
                 id: 4,
-                title: 'Unicars',
-                link: 'https://unicars.by',
-                img: unicars
+                title: 'Kvalirem.ee',
+                link: 'https://kvalirem.ee/',
+                img: kvalirem
             },
             {
                 id: 5,
-                title: 'Kanso',
-                link: 'https://kanso.by',
-                img: kanso
+                title: 'Kupitbeton.by',
+                link: 'https://www.kupitbeton.by/',
+                img: beton
             },
             {
                 id: 6,
-                title: 'MyTopka',
-                link: 'https://mytopka.by',
-                img: topka
+                title: 'Astra',
+                link: 'https://e-astra-web.vercel.app/',
+                img: astra
             }
         ]
     }
