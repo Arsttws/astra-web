@@ -8,27 +8,34 @@ const montserratBold = localFont({
 export default function Route() {
     return(
         <div className='Route'>
-            <p className="Route-headline">Наша работа пошагово</p>
+            <p className="Route-headline">Как это работает</p>
             <div className="route-steps">
                 <div className="first-step step">
                     <p className={`step-number ${montserratBold.className}`}>01</p>
                     <div className="description">
-                        <p className="title">Обсуждение</p>
-                        <p className='desc'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, quia!</p>
+                        <p className="title">Определение требований</p>
+                        <p className='desc'>Определение целей проекта через обсуждение и анализ</p>
                     </div>
                 </div>
                 <div className="second-step step">
                     <p className={`step-number ${montserratBold.className}`}>02</p>
                     <div className="description">
-                        <p className="title">Разработка</p>
-                        <p className='desc'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, quia!</p>
+                        <p className="title">Проектирование и разработка</p>
+                        <p className='desc'>Разработка структуры, дизайна и основных страниц сайта</p>
                     </div>
                 </div>
                 <div className="third-step step">
                     <p className={`step-number ${montserratBold.className}`}>03</p>
                     <div className="description">
-                        <p className="title">Сдача проекта</p>
-                        <p className='desc'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, quia!</p>
+                        <p className="title">Тестирование и оптимизация</p>
+                        <p className='desc'>Улучшение производительности и исправление ошибок</p>
+                    </div>
+                </div>
+                <div className="third-step step">
+                    <p className={`step-number ${montserratBold.className}`}>04</p>
+                    <div className="description">
+                        <p className="title">Внедрени и поддержка</p>
+                        <p className='desc'>Вывод сайта на рынок, обслуживание сайта для стабильной работы</p>
                     </div>
                 </div>
             </div>

@@ -436,7 +436,7 @@ header{
     position: absolute;
     top: 100px;
     content: '';
-    height: 460px;
+    height: calc(100% - 80px);
     border-left: 2px dashed $lightBlue;
     left: 20px;
 }
@@ -767,9 +767,6 @@ footer{
             margin: 0 auto;
         }
     }
-    .Route::before{
-        top: 160px;
-    }
 
     footer{
         .footer-wrapper{
@@ -804,7 +801,7 @@ footer{
         .services-headline{
             margin-left: auto;
             margin-right: auto;
-            font-size: 40px;
+            font-size: 32px;
         }
         .services{
             grid-template-columns: repeat(1, 1fr);
@@ -827,7 +824,7 @@ footer{
     .Route{
         max-width: 300px;
         .Route-headline{
-            font-size: 40px;
+            font-size: 32px;
             text-align: center;
             width: fit-content;
         }
@@ -838,11 +835,15 @@ footer{
         .route-steps{
             .step{
                 p{
-                    font-size: 80px;
+                    font-size: 60px;
                 }
                 .description{
+                    margin: auto  0  0 20px; 
                     .title{
-                        font-size: 18px;
+                        font-size: 16px;
+                    }
+                    .title::after{
+                        width: 160px;
                     }
                     .desc{
                         font-size: 12px;
@@ -852,8 +853,8 @@ footer{
         }
     }
     .Route::before{
-        top: 154px;
-        height: 410px;
+        height: calc(100% - 120px);
+        left: 12px;
     }
     footer{
         .footer-wrapper{
