@@ -5,6 +5,7 @@ import Image from 'next/image'
 import Route from '../../components/route'
 import arrowR from '../../public/images/arrow-right.svg'
 import { MyServices } from '../../interfaces/service'
+import Counter from '../../components/counter'
 
 export const getStaticProps = async () => {
   const res = await fetch('https://mocki.io/v1/c4c3e10d-4cb7-413f-8f37-5f656253ab93')
@@ -46,6 +47,7 @@ export default function Index(services: ServicePageProps) {
         </div>
       </div>
       <Route />
+      <Counter />
     </MainLayout>
   )
 }
