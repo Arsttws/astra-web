@@ -5,10 +5,15 @@ const montserratBold = localFont({
     display: 'swap',
   })
 
+  const jost = localFont({
+    src: '../src/fonts/Jost/Jost-Regular.ttf',
+    display: 'swap',
+})
+
 export default function Route() {
     return(
         <div className='Route'>
-            <p className="Route-headline">Как это работает</p>
+            <p className={`Route-headline ${jost.className}`}>Как это работает</p>
             <div className="route-steps">
                 <div className="first-step step">
                     <p className={`step-number ${montserratBold.className}`}>01</p>

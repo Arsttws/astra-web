@@ -1,5 +1,6 @@
 import { MainLayout } from '../../components/MainLayout'
 import Link from 'next/link'
+import localFont from 'next/font/local'
 import Slider from '../../components/slider'
 import Image from 'next/image'
 import Route from '../../components/route'
@@ -19,13 +20,18 @@ interface ServicePageProps {
   services: MyServices[]
 }
 
+const jost = localFont({
+  src: '../fonts/Jost/Jost-Regular.ttf',
+  display: 'swap',
+})
+
 export default function Index(services: ServicePageProps) {
   
   return (
     <MainLayout desc='Главная' currentPage="index">
       <Slider />
       <div className="mainContent serviceContent">
-        <p className='services-headline' id='secondPage'>Наши услуги</p>
+        <p className={`services-headline ${jost.className}`} id='secondPage'>Наши услуги</p>
         <div className='services'>
           {services.services.map(service => (
             <div key={service.title} className={`${service.title}-service service`}>
@@ -46,8 +52,8 @@ export default function Index(services: ServicePageProps) {
           </div>
         </div>
       </div>
-      <Route />
       <Counter />
+      <Route />
     </MainLayout>
   )
 }

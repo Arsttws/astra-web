@@ -2,6 +2,7 @@ import { MainLayout } from "../../components/MainLayout";
 import {Swiper, SwiperSlide} from "swiper/react";
 import { Pagination, Navigation } from 'swiper/modules';
 import { MyReviews } from "../../interfaces/reviews";
+import localFont from 'next/font/local'
 import Image from "next/image";
 import quotes from '../../public/images/quoteMarks.svg'
 
@@ -18,6 +19,11 @@ export const getStaticProps = async () => {
   interface ReviewsPageProps {
     reviews: MyReviews[]
   }
+  
+  const jost = localFont({
+    src: '../fonts/Jost/Jost-Regular.ttf',
+    display: 'swap',
+  })
   
 
 export default function Reviews(reviews: ReviewsPageProps) {
@@ -41,7 +47,7 @@ export default function Reviews(reviews: ReviewsPageProps) {
                                 </div>
                                 <div className="review-main">
                                     <div className="text"><p>{review.body.substring(0, 300)}</p></div>
-                                    <div className="name"><p>{review.person}</p></div>
+                                    <div className="name"><p className={jost.className}>{review.person}</p></div>
                                     <a href={review.link} className="original">Посмотреть оргинал</a>
                                 </div>
                             </div>

@@ -28,7 +28,7 @@ export default function Solutions(solutions: SolutionsPageProps) {
     return(
         <MainLayout desc="Решения" currentPage="Solutions">
             <div className="solutions-wrapper">
-                <h2 className="solutions-headline">Пакеты решений</h2>
+                <h2 className={`solutions-headline ${jost.className}`}>Пакеты решений</h2>
                 <div className="solutions">
                     {solutions.solutions.map((solution) =>(
                         <div key={solution.title} className={`single-solution ${solution.title}`}>
